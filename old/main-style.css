@@ -1,0 +1,64 @@
+/*Variables*/
+/*Variables*/
+/*Home*/
+#home {
+  height: 640px;
+  width: 100%;
+  background: url("includes/images/The Colorful Cat Studio/Paintings/home.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+/*About*/
+#about {
+  height: 600px;
+  width: 100%;
+  background: #b73a5a;
+}
+.intro-header {
+  font-size: 3em;
+}
+/*Portfolio*/
+#portfolio {
+  height: 600px;
+  width: 100%;
+  background: #8f2f47;
+}
+.img-wrapper {
+  float: left;
+}
+.img {
+  width: 20%;
+  height: 13em;
+  background: #ddd;
+  margin: 1% 2% 1% 1%;
+  padding: 1%;
+}
+.img:hover {
+  background: #11ddff;
+}
+.images-row-1 .img {
+  margin: 0 2% 1% 1%;
+}
+/*Contact*/
+#contact {
+  background: #4ab1c3;
+  height: 600px;
+  width: 100%;
+  background: #682335;
+}
+/*Nav*/
+.nav-wrapper {
+  z-index: 10;
+  float: left;
+  margin: 5% 0 0 5%;
+}
+.nav-wrapper-inner {
+  background: rgba(177, 177, 177, 0.7);
+  padding: 0;
+}
+.logo {
+  float: left;
+}
+.nav {
+  float: right;
+}
