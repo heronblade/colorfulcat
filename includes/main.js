@@ -90,8 +90,8 @@ $(document).ready(function() {
 		});
 	});
 
- 
-
+	//add down arrow and make it a link that will smooth scroll to the next div
+	
 
 	
 
