@@ -100,7 +100,8 @@
 // Portfolio
 
 	#portfolio {
-		background: #C3C3C3;
+		// background: #C3C3C3;
+		background: #fff;
 		height: 3000px;
 	}
 
@@ -162,6 +163,7 @@
 
 	.thumbnail {
 		border: none !important;
+		background-color: #C3C3C3;
 	}
 
 	.thumbnail > a > img {
@@ -202,10 +204,37 @@
 		.modal-body {
 			overflow: hidden;
 		}
+
 		.modal-thumb {
-			float: right;
-			clear: both;
+			overflow: hidden;
+			border-bottom: 1px solid #e5e5e5;
+			padding-bottom: 10px;
+
+			img {
+				float: right;
+				padding-left: 10px;
+			}
 		}
+
+		.modal-order {
+			padding-bottom: 10px;
+			overflow: hidden;
+		}
+
+		.btn-etsy {
+			margin: 2% 0 0 30%;
+			float: left;
+		}
+
+		.btn-paypal {
+			margin: 2% 30% 0 0%;
+			float: right;
+		}
+
+		.modal-size, .modal-paper, .modal-orig-print {
+			display: none;
+		}
+
 
 
 

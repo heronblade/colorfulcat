@@ -91,8 +91,11 @@ $(document).ready(function() {
 	});
 
  
-
-
+	//when modal button is clicked, hide everything except for the description and order buttons
+	$('.btn-paypal').on('click', function() {
+		$('.modal-size').show();
+		console.log('josh');
+	});
 	
 
 });
