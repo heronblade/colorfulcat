@@ -30,8 +30,6 @@ $(document).ready(function() {
 		$('#about').height(wellHeight + 100);
 	}
 
-	var windowHeight = $(window).height();
-
 	//keep the portfolio nav at the top of the page when the page is smaller than 768px
 	function checkPortfolioNav() {
 		var width = $(window).width();
@@ -90,8 +88,14 @@ $(document).ready(function() {
 		});
 	});
 
- 
+
 	//when modal button is clicked, hide everything except for the description and order buttons
+	//
+	$('.modal-orig-print input').on('click', function() {
+		$('.btn-etsy').removeAttr('disabled');
+		$('.btn-paypal').removeAttr('disabled');
+	});
+
 	$('.btn-paypal').on('click', function() {
 		$('.modal-size').show();
 	});
@@ -103,6 +107,6 @@ $(document).ready(function() {
 	$('.modal-paper input').on('click', function() {
 		$('.modal-orig-print').show();
 	});
-	
+
 
 });
