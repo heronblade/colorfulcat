@@ -101,7 +101,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-												<h4 class="modal-title" id="myModalLabel">Karis</h4>
+												<span class="modal-title" id="myModalLabel">Karis</span>
 											</div>
 											<div class="modal-body">
 
@@ -112,25 +112,24 @@
 
 
 
-												<!--TODO: get the correct font here-->
 												<div class="modal-order">
 													<a href="http://www.etsy.com/listing/164845325/girl-painting-print-from-original?ref=shop_home_active" target="_blank"><button class="btn btn-primary btn-lg btn-etsy">Etsy</button></a>
 													<button class="btn btn-primary btn-lg btn-paypal">Paypal</button>
 												</div>
 
-
+												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<span><span class="modal-size-option">5x9: </span><input type="checkbox" name="5x9" id="five-by-nine"> </span>
-													<span><span class="modal-size-option">12x12: </span><input type="checkbox" name="12x12" id="twelve-by-twelve"> </span>
-													<span><span class="modal-size-option">Custom: </span><input type="checkbox" name="custom" id="custom"> </span>
+													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
+													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 
 
 												<div class="modal-paper">
-													<p>Step 2: Paper</p>
-													<span>Watercolor: <input type="checkbox" name="watercolor"></span>
-													<span>Picture: <input type="checkbox" name="picture"></span>
+													<p>Step 2: Material</p>
+													<input type="radio" name="modal-paper-type" value="watercolor">Watercolor
+													<input type="radio" name="modal-paper-type" value="glossy-photo">Glossy Photo
 												</div>
 
 

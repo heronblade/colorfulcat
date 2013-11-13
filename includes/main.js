@@ -94,7 +94,14 @@ $(document).ready(function() {
 	//when modal button is clicked, hide everything except for the description and order buttons
 	$('.btn-paypal').on('click', function() {
 		$('.modal-size').show();
-		console.log('josh');
+	});
+
+	$('.modal-size input').on('click', function() {
+		$('.modal-paper').show();
+	});
+
+	$('.modal-paper input').on('click', function() {
+		$('.modal-orig-print').show();
 	});
 	
 
