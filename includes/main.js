@@ -105,7 +105,7 @@ $(document).ready(function() {
 	});
 
 	$('.modal-paper input').on('click', function() {
-		$('.modal-orig-print').show();
+		$('.modal-paypal').show();
 	});
 
 
