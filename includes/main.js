@@ -30,24 +30,6 @@ $(document).ready(function() {
 		$('#about').height(wellHeight + 100);
 	}
 
-	//keep the portfolio nav at the top of the page when the page is smaller than 768px
-	function checkPortfolioNav() {
-		var width = $(window).width();
-		var topOfPortNav = $('.portfolio-nav').offset().top;
-		var trueTopOfPortNav = $('.portfolio-nav').outerHeight();
-		var windowTop = $(window).scrollTop();
-		var topOfPort = $('#portfolio').offset().top;
-		if (width < 768) {
-			if (topOfPort >= topOfPortNav && windowTop < topOfPort) {
-				$('.portfolio-nav').offset({top:topOfPort, left:0});
-			} else if (windowTop > topOfPortNav || windowTop < topOfPortNav) {
-				$('.portfolio-nav').offset({top:windowTop, left:0});
-			}
-		} else {
-			$('.portfolio-nav').offset({top:topOfPort, left:0});
-		}
-	}
-
 	function resizePort() {
 		//have to figure out the current height of each of the divs, then add it all up
 		var peopleHeight = $('#people').outerHeight(true);
