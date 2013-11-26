@@ -91,15 +91,38 @@ $(document).ready(function() {
 	});
 
 
-	//TODO: if the image has an original, then add the correct link to the etsy button
-	$('.poppy-orig').on('click', function() {
+	// Original vs Print Etsy
+		$('.poppy-orig').on('click', function() {
+			$('.poppy-etsy-btn').attr('href', 'http://www.etsy.com/listing/165057267/poppy-painting-original-watercolor?ref=shop_home_active');
+		});
 
-	});
+		$('.poppy-print').on('click', function() {
+			$('.poppy-etsy-btn').attr('href', 'http://www.etsy.com/listing/164843491/flower-painting-print-from-original?ref=shop_home_active');
+		});
 
-	$('.poppy-print').on('click', function() {
+		$('.pumpking-patch-orig').on('click', function() {
+			$('.pumpking-patch-etsy-btn').attr('href', 'http://www.etsy.com/listing/165278304/pumpkin-painting-original-watercolor?ref=shop_home_active');
+		});
 
-	});
+		$('.pumpking-patch-print').on('click', function() {
+			$('.pumpking-patch-etsy-btn').attr('href', 'http://www.etsy.com/listing/164830342/pumpkin-painting-print-from-original?ref=shop_home_active');
+		});
 
+		$('.green-window-orig').on('click', function() {
+			$('.green-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/163510960/window-painting-original-watercolor?ref=shop_home_active');
+		});
+
+		$('.green-window-print').on('click', function() {
+			$('.green-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/163515823/window-painting-print-from-original?ref=shop_home_active');
+		});
+
+		$('.red-window-orig').on('click', function() {
+			$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/165483112/window-painting-original-watercolor?ref=shop_home_active');
+		});
+		
+		$('.red-window-print').on('click', function() {
+			$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/164841917/window-painting-print-from-original?ref=shop_home_active');
+		});
 
 	//TODO: whenever the last button is clicked, and the person wants to buy through paypal, then we need to put the correct value in the button.
 	
