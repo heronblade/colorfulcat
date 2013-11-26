@@ -91,6 +91,16 @@ $(document).ready(function() {
 	});
 
 
+	//TODO: if the image has an original, then add the correct link to the etsy button
+	$('.poppy-orig').on('click', function() {
+
+	});
+
+	$('.poppy-print').on('click', function() {
+
+	});
+
+
 	//TODO: whenever the last button is clicked, and the person wants to buy through paypal, then we need to put the correct value in the button.
 	
 
