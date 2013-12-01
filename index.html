@@ -62,11 +62,12 @@
 
 			<div id="portfolio">
 
-			<!-- TODO: Match all the images' Original vs Print buttons -->
-			<!-- TODO: if there is an original and a print, change the etsy link -->
-			<!-- TODO: add the correct sizes to each picture -->
+
+
+
 			<!-- TODO: change the paypal link depending on the user's choices -->
 			<!-- TODO: add information popups -->
+			<!-- TODO: If the user selects custom, allow them to email us asking for a custom painting -->
 				<div class="portfolio-images">
 
 					<div id="people" class="people-holder col-lg-4 col-md-4 col-sm-4">
@@ -101,7 +102,7 @@
 													<button class="btn btn-primary btn-lg btn-paypal" disabled="disabled">Paypal</button>
 												</div>
 												<!-- TODO: add the question mark information -->
-												<div class="modal-size">
+												<!-- <div class="modal-size">
 													<p>Step 1: Size</p>
 													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
 													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
@@ -111,9 +112,40 @@
 													<p>Step 2: Material</p>
 													<input type="radio" name="modal-paper-type" value="watercolor">Watercolor
 													<input type="radio" name="modal-paper-type" value="glossy-photo">Glossy Photo
-												</div>
+												</div> -->
 
 												<div class="modal-paypal">
+
+
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="test two">
+
+<input type="hidden" name="item_number" value="kar-1">
+
+<input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><table><tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td>
+<select name="os0">
+	<option value="8x10">8x10 $25.00 USD</option>
+	<option value="11x14">11x14 $35.00 USD</option>
+	<option value="5x7">5x7 $45.00 USD</option>
+</select> </td></tr><tr><td><input type="hidden" name="on1" value="Paper Type">Paper Type</td></tr><tr><td><select name="os1">
+	<option value="Watercolor">Watercolor </option>
+	<option value="Photo Paper">Photo Paper </option>
+</select> </td></tr></table><input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="option_select0" value="8x10">
+<input type="hidden" name="option_amount0" value="25.00">
+<input type="hidden" name="option_select1" value="11x14">
+<input type="hidden" name="option_amount1" value="35.00">
+<input type="hidden" name="option_select2" value="5x7">
+<input type="hidden" name="option_amount2" value="45.00">
+
+
+<input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+
+
+
+
+
 												</div>
 											</div>
 										</div><!-- /.modal-content -->
@@ -532,7 +564,7 @@
 							</div>
 						</div>
 
-						<!-- poppy has original stopped here-->
+						<!-- poppy has original-->
 						<div class="thumbnail port-thumb">
 							<a href="includes/images/portfolio/places-and-things/poppy.jpg" title="poppy" class="port-popup"><img src="includes/images/portfolio/places-and-things/poppy.jpg"></a>
 							<div class="caption">
@@ -676,8 +708,8 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="nine-by-twleve">9"x12"
+													<input type="radio" name="modal-picture-size" value="eleven-by-fifteen">11"x15"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -778,8 +810,8 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="eight-by-twleve">8"x12"
+													<input type="radio" name="modal-picture-size" value="ten-by-fifteen">10"x15"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -830,6 +862,7 @@
 												<div class="modal-size">
 													<p>Step 1: Size</p>
 													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
+													<input type="radio" name="modal-picture-size" value="eight-by-ten">9"x12"
 													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
@@ -880,8 +913,8 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="eight-by-eight">8"x8"
+													<input type="radio" name="modal-picture-size" value="twelve-by-twleve">12"x12"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -932,6 +965,7 @@
 												<div class="modal-size">
 													<p>Step 1: Size</p>
 													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
+													<input type="radio" name="modal-picture-size" value="nine-by-twelve">9"x12"
 													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
@@ -982,8 +1016,9 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="five-by-seven">5"x7"
+													<input type="radio" name="modal-picture-size" value="eight-by-twelve">8"x12"
+													<input type="radio" name="modal-picture-size" value="nine-by-twelve">9"x12"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -1135,8 +1170,8 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="eight-by-eleven">8"x11"
+													<input type="radio" name="modal-picture-size" value="eleven-by-fifteen">11"x15"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -1186,8 +1221,7 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="eight-by-ten">14"x4"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -1497,8 +1531,9 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="five-by-seven">5"x7"
+													<input type="radio" name="modal-picture-size" value="eleven-by-twelve">8"x12"
+													<input type="radio" name="modal-picture-size" value="nine-by-twelve">9"x12"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">
@@ -1653,8 +1688,9 @@
 												<!-- TODO: add the question mark information -->
 												<div class="modal-size">
 													<p>Step 1: Size</p>
-													<input type="radio" name="modal-picture-size" value="eight-by-ten">8"x10"
-													<input type="radio" name="modal-picture-size" value="eleven-by-fourteen">11"x14"
+													<input type="radio" name="modal-picture-size" value="five-by-seven">5"x7"
+													<input type="radio" name="modal-picture-size" value="eight-by-twleve">8"x12"
+													<input type="radio" name="modal-picture-size" value="nine-by-twelve">9"x12"
 													<input type="radio" name="modal-picture-size" value="custom">Custom
 												</div>
 												<div class="modal-paper">

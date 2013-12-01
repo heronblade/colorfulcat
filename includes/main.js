@@ -79,7 +79,8 @@ $(document).ready(function() {
 	});
 
 	$('.btn-paypal').on('click', function() {
-		$('.modal-size').show();
+		$('.modal-size').show(); 
+		$('.modal-paypal').show();
 	});
 
 	$('.modal-size input').on('click', function() {
@@ -126,6 +127,7 @@ $(document).ready(function() {
 
 	//TODO: whenever the last button is clicked, and the person wants to buy through paypal, then we need to put the correct value in the button.
 	
+		$('#karisModal')
 
 	//All PayPal variables
 	var payPal = {
