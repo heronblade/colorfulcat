@@ -12,7 +12,7 @@ $(document).ready(function() {
 	// resizePort();
 
 	$(window).resize(function() { resizeHomeDiv(); checkPortfolioNav(); resizePort(); portfolioAnchorTags(); resizeAbout(); });
-	$(window).scroll(function() { checkPortfolioNav(); });
+	// $(window).scroll(function() { checkPortfolioNav(); });
 	$(window).load(function() { resizePort(); resizeAbout(); });
 
 	function resizeHomeDiv() {
@@ -72,7 +72,17 @@ $(document).ready(function() {
 
 
 	//when modal button is clicked, hide everything except for the description and order buttons
-	//
+
+	$('.order-btn').on('click', function() {
+		var target = $(this).data('target'); console.log('target ' + target);
+		var origVsPrint = $(target).children('.modal-orig-print').size(); console.log('origVsPrint ' + origVsPrint);
+
+		if (origVsPrint === 0) {
+			$('.btn-etsy').removeAttr('disabled');
+			$('.btn-paypal').removeAttr('disabled');
+		}
+	})
+
 	$('.modal-orig-print input').on('click', function() {
 		$('.btn-etsy').removeAttr('disabled');
 		$('.btn-paypal').removeAttr('disabled');
@@ -83,13 +93,23 @@ $(document).ready(function() {
 		$('.modal-paypal').show();
 	});
 
-	$('.modal-size input').on('click', function() {
-		$('.modal-paper').show();
-	});
+	// $('.modal-size input').on('click', function() {
+	// 	$('.modal-paper').show();
+	// });
 
-	$('.modal-paper input').on('click', function() {
-		$('.modal-paypal').show();
-	});
+	// $('.modal-paper input').on('click', function() {
+	// 	$('.modal-paypal').show();
+	// });
+
+
+
+
+
+
+
+
+
+
 
 
 	// Original vs Print Etsy
