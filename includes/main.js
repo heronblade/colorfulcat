@@ -74,13 +74,15 @@ $(document).ready(function() {
 	//when modal button is clicked, hide everything except for the description and order buttons
 
 	$('.order-btn').on('click', function() {
-		var target = $(this).data('target'); console.log('target ' + target);
-		var origVsPrint = $(target).children('.modal-orig-print').size(); console.log('origVsPrint ' + origVsPrint);
+		var target = $(this).data('target');
+		var origVsPrint = $(target).children('.modal-orig-print').size();
 
 		if (origVsPrint === 0) {
 			$('.btn-etsy').removeAttr('disabled');
 			$('.btn-paypal').removeAttr('disabled');
 		}
+
+		$('.modal-paypal').hide();
 	})
 
 	$('.modal-orig-print input').on('click', function() {
