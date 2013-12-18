@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+//TODO: make it so you can't right click images
 	//image popups
 	$('.portfolio-images a.port-popup').Chocolat();
 

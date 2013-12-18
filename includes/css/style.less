@@ -32,6 +32,12 @@
 		src: url(../OratorBold.ttf);
 	}
 
+	.margin1020 {
+		margin: 1% 0 2% 0;
+	}
+
+	
+
 // Site wide
 
 	body {
@@ -44,12 +50,16 @@
 		overflow: hidden;
 	}
 
+	.caption a {
+		color: #fff;
+	}
+
 // Home
 
 	#home {
 		height: 500px;
-		background: url("../images/home.png");
-		background-position: top;
+		background: url("../images/quiet.png");
+		background-position: bottom;
 		background-size: cover;
 	}
 
@@ -62,6 +72,9 @@
 		float: right;
 		font-size: 1.2em;
 		font-family: OratorStd;
+		//background: @grey;
+		height: 180px;
+		margin-top: 8%;
 
 		a {
 			color: #5D5D5D;
@@ -79,7 +92,7 @@
 	}
 
 	.nav-wrapper-inner {
-	  background: @grey;
+	  //background: @grey;
 	  padding: 0;
 	}
 
@@ -111,8 +124,8 @@
 		height: 3000px;
 
 		.btn {
-			background-color: #EA8B86 !important;
-			border-color: #E98A84 !important;
+			background-color: #AB2 !important;
+			border-color: #fff !important;
 		}
 	}
 
@@ -136,17 +149,17 @@
 
 		.people {
 			background: @grey;
-			margin: 1% 0 2% 0;
+			margin: .margin1020;
 		}
 
 		.animals-pets {
 			background: @grey;
-			margin: 1% 0 2% 0;
+			margin: .margin1020;
 		}
 
 		.places-things {
 			background: @grey;
-			margin: 1% 0 2% 0;
+			margin: .margin1020;
 		}
 	}
 
@@ -328,6 +341,11 @@
 		a {
 			padding: 38px 16px;
 		}
+
+		.btn {
+			background-color: #AB2 !important;
+			border-color: #fff !important;
+		}
 		
 	}
 
@@ -408,14 +426,12 @@
 		}
 	}
 
-	@media (min-width: 768px) {
+	@media (max-width: 500px) {
+		.nav {
+			float: none;
+		}
 
-	}
-
-	@media (min-width: 992px) {
-
-	}
-
-	@media (min-width: 1200px) {
-
+		.rachel-picture {
+			display: none;
+		}
 	}
