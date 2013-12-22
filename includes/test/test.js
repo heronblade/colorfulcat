@@ -13,7 +13,10 @@ $(document).ready(function() {
 				"h3": "h3",
 				"thumb_medium": "",
 				"thumb_year": "",
+				"thumb_size": "",
 				"thumb_prints": "",
+				"karis_order_btn": "",
+				"data_target": "#"
 			},
 			"modal": {
 				"id": "",
@@ -48,14 +51,19 @@ $(document).ready(function() {
 
 	};
 
+	var name = 'karis';
 
-	$('.port-thumb-karis a').attr('href', portfolio.karis.port_popup.href);
-	$('.port-thumb-karis a').attr('title', portfolio.karis.port_popup.title);
-	$('.port-thumb-karis a img').attr('src', portfolio.karis.port_popup.src);
+	$('div.port-thumb-'+name+' a').attr('href', portfolio.karis.port_popup.href);
+	$('div.port-thumb-'+name+' a').attr('title', portfolio.karis.port_popup.title);
+	$('div.port-thumb-'+name+' a img').attr('src', portfolio.karis.port_popup.src);
 
-	$('.port-thumb-karis .caption h3').html(portfolio.karis.caption.h3);
-	$('.port-thumb-karis .caption .thumb-medium').html(portfolio.karis.caption.thumb_medium);
-	
+	$('div.port-thumb-'+name+' div.caption h3').html(portfolio.karis.caption.h3);
+	$('div.port-thumb-'+name+' div.caption div.thumb-medium').html(portfolio.karis.caption.thumb_medium);
+	$('div.port-thumb-'+name+' div.caption div.thumb-year').html(portfolio.karis.caption.thumb_year);
+	$('div.port-thumb-'+name+' div.caption div.thumb-size').html(portfolio.karis.caption.thumb_size);
+	$('div.port-thumb-'+name+' div.caption div.thumb-prints').html(portfolio.karis.caption.thumb_prints);
+	$('div.port-thumb-'+name+' div.caption .order-btn').attr('data-target', portfolio.karis.caption.data_target);
+
 
 	//object template
 	// var template = {
