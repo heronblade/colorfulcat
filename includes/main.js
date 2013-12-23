@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-//TODO: make it so you can't right click images
+	//TODO: make it so you can't right click images
 	//image popups
 	$('.portfolio-images a.port-popup').Chocolat();
 
@@ -27,8 +27,11 @@ $(document).ready(function() {
 	}
 
 	function resizeAbout() {
-		var wellHeight = $('.well').height();
-		$('#about').height(wellHeight + 100);
+		var well1 = $('.well1').height(); 
+		var well2 = $('.well2').height();
+		var well3 = $('.well3').height();
+		var both = well1 + well2 + well3;
+		$('#about').height(both + 300);
 	}
 
 	function resizePort() {
@@ -93,6 +96,53 @@ $(document).ready(function() {
 		$('.modal-paypal').show();
 	});
 
+
+		//When question mark's clicked, show the next span
+		//Hide them all first though
+		$('.shipping-question-answered').hide();
+		$('.refund-exchange-question-answered').hide();
+		$('.policies-question-answered').hide();
+		$('.materials-question-answered').hide();
+		$('.shipping-question').on('click', function() {
+			var shippingQuestion = $('.shipping-question-answered');
+
+			if (shippingQuestion.css('display', 'none')) {
+				shippingQuestion.show();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight + 150;
+				$('#about').height(newHeight);
+			} else if (shippingQuestion.css('display', 'inline')) { alert('else');
+				shippingQuestion.hide();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight - 150;
+				$('#about').height(newHeight);
+			}
+		});
+
+		$('.refund-exchange-question').on('click', function() {
+			$('.refund-exchange-question-answered').show();
+			var aboutHeight = $('#about').height();
+			var newHeight = aboutHeight + 150;
+			$('#about').height(newHeight);
+		});
+
+		$('.policies-question').on('click', function() {
+			$('.policies-question-answered').show();
+			var aboutHeight = $('#about').height();
+			var newHeight = aboutHeight + 150;
+			$('#about').height(newHeight);
+		});
+
+		$('.materials-question').on('click', function() {
+			$('.materials-question-answered').show();
+			var aboutHeight = $('#about').height();
+			var newHeight = aboutHeight + 150;
+			$('#about').height(newHeight);
+		});
+
+}); //document.ready
+
+
 	// Original vs Print Etsy
 		$('.poppy-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Poppy"><input type="hidden" name="item_number" value="pop"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">Original $175 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="175"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
@@ -141,4 +191,3 @@ $(document).ready(function() {
 			$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/164841917/window-painting-print-from-original?ref=shop_home_active');
 			$('.red-window-paypal').html(paypalForm);
 		});
-});
