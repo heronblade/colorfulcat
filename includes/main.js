@@ -104,40 +104,59 @@ $(document).ready(function() {
 		$('.policies-question-answered').hide();
 		$('.materials-question-answered').hide();
 		$('.shipping-question').on('click', function() {
-			var shippingQuestion = $('.shipping-question-answered');
-
-			if (shippingQuestion.css('display', 'none')) {
-				shippingQuestion.show();
+			if ($('.shipping-question-answered').css('display') == 'none') {
+				$('.shipping-question-answered').show();
 				var aboutHeight = $('#about').height();
-				var newHeight = aboutHeight + 150;
+				var newHeight = aboutHeight + 100;
 				$('#about').height(newHeight);
-			} else if (shippingQuestion.css('display', 'inline')) { alert('else');
-				shippingQuestion.hide();
+			} else {
+				$('.shipping-question-answered').hide();
 				var aboutHeight = $('#about').height();
-				var newHeight = aboutHeight - 150;
+				var newHeight = aboutHeight - 100;
 				$('#about').height(newHeight);
 			}
 		});
 
 		$('.refund-exchange-question').on('click', function() {
-			$('.refund-exchange-question-answered').show();
-			var aboutHeight = $('#about').height();
-			var newHeight = aboutHeight + 150;
-			$('#about').height(newHeight);
+			if ($('.refund-exchange-question-answered').css('display') == 'none') {
+				$('.refund-exchange-question-answered').show();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight + 100;
+				$('#about').height(newHeight);
+			} else {
+				$('.refund-exchange-question-answered').hide();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight - 100;
+				$('#about').height(newHeight);
+			}
 		});
 
 		$('.policies-question').on('click', function() {
-			$('.policies-question-answered').show();
-			var aboutHeight = $('#about').height();
-			var newHeight = aboutHeight + 150;
-			$('#about').height(newHeight);
+			if ($('.policies-question-answered').css('display') == 'none') {
+				$('.policies-question-answered').show();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight + 100;
+				$('#about').height(newHeight);
+			} else {
+				$('.policies-question-answered').hide();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight - 100;
+				$('#about').height(newHeight);
+			}
 		});
 
 		$('.materials-question').on('click', function() {
-			$('.materials-question-answered').show();
-			var aboutHeight = $('#about').height();
-			var newHeight = aboutHeight + 150;
-			$('#about').height(newHeight);
+			if ($('.materials-question-answered').css('display') == 'none') {
+				$('.materials-question-answered').show();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight + 100;
+				$('#about').height(newHeight);
+			} else {
+				$('.materials-question-answered').hide();
+				var aboutHeight = $('#about').height();
+				var newHeight = aboutHeight - 150;
+				$('#about').height(newHeight);
+			}
 		});
 
 }); //document.ready
