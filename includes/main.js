@@ -27,11 +27,11 @@ $(document).ready(function() {
 	}
 
 	function resizeAbout() {
-		var well1 = $('.well1').height(); 
+		var well1 = $('.well1').height();
 		var well2 = $('.well2').height();
 		var well3 = $('.well3').height();
 		var both = well1 + well2 + well3;
-		$('#about').height(both + 300);
+		$('#about').height(both + 400);
 	}
 
 	function resizePort() {
