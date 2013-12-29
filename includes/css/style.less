@@ -76,7 +76,6 @@
 		float: right;
 		font-size: 1.2em;
 		font-family: OratorStd;
-		//background: @grey;
 		height: 180px;
 		margin-top: 8%;
 
@@ -96,7 +95,6 @@
 	}
 
 	.nav-wrapper-inner {
-	  //background: @grey;
 	  padding: 0;
 	}
 
@@ -127,7 +125,6 @@
 // Portfolio
 
 	#portfolio {
-		// background: #C3C3C3;
 		background: #fff;
 		height: 3000px;
 
@@ -343,45 +340,15 @@
 		overflow: visible;
 	}
 
-	.email {
-
-		//padding: 3% 0 0 0;
-
-		a {
-			padding: 38px 16px;
-		}
-
-		.btn {
-			background-color: #AB2 !important;
-			border-color: #fff !important;
-		}
-
-	}
-
 	.social {
 		overflow: hidden;
 		margin-top: 5%;
 	}
 
-	.facebook, .pinterest, .etsy {
-		//float: left;
-		// margin: 2% 3% 0 3%;
-		//width: 33%;
-		span {
-			color: #767675;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-		}
-
-		a {
-			margin-left: 45%;
-		}
-	}
-
 	#persistent-footer {
-		background: rgba(255, 255, 225, 0.7);
-		height: 100px;
-		width: 600px;
+		background: rgba(221, 221, 221, 0.7);
+		height: 80px;
+		width: 270px; 
 		position: fixed;
 		bottom: 0px;
 		right: 0px;
@@ -389,10 +356,26 @@
 		li {
 			list-style: none;
 			float: left;
+
+			a:hover {
+				text-decoration: none;
+			}
 		}
 
 		.icon-facebook, .icon-pinterest, .icon-question, .icon-envelope {
 			font-size: 4em;
+		}
+
+		.facebook {
+			margin-left: -8%;
+		}
+
+		.etsy {
+			margin-top: 2%;
+		}
+
+		.pinterest, .etsy, .email {
+			margin-left: 7%;
 		}
 	}
 
@@ -460,5 +443,21 @@
 
 		.rachel-picture {
 			display: none;
+		}
+	}
+
+	@media (max-width: 400px) {
+		#persistent-footer {
+			width: 160px; 
+			height: 40px;
+
+			.icon-facebook, .icon-pinterest, .icon-question, .icon-envelope {
+				font-size: 2em;
+			}
+
+			.etsy img {
+				width: 23px;
+			}
+
 		}
 	}
