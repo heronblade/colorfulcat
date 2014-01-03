@@ -89,7 +89,7 @@ $(document).ready(function() {
 	});
 
 	$('.btn-paypal').on('click', function() {
-		$('.modal-size').show(); 
+		$('.modal-size').show();
 		$('.modal-paypal').show();
 	});
 
@@ -100,6 +100,7 @@ $(document).ready(function() {
 		$('.refund-exchange-question-answered').hide();
 		$('.policies-question-answered').hide();
 		$('.materials-question-answered').hide();
+
 		$('.shipping-question').on('click', function() {
 			if ($('.shipping-question-answered').css('display') == 'none') {
 				$('.shipping-question-answered').show();
@@ -114,7 +115,7 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.refund-exchange-question').on('click', function() {
+		$('.refund-exchanges-question').on('click', function() {
 			if ($('.refund-exchange-question-answered').css('display') == 'none') {
 				$('.refund-exchange-question-answered').show();
 				var aboutHeight = $('#about').height();
@@ -155,6 +156,25 @@ $(document).ready(function() {
 				$('#about').height(newHeight);
 			}
 		});
+
+
+
+	//Scrolling images into view
+	$(window).scroll(checkPortfolioHeight);
+
+	function checkPortfolioHeight() {
+		var scrollTop = $(window).scrollTop(); //console.log('scrollTop ' + scrollTop);
+		var portfolioOffset = $('#portfolio').offset().top; //console.log('portfolioOffset ' + portfolioOffset);
+		var distance = (portfolioOffset - scrollTop) + 100; //console.log('distance ' + distance);
+
+		if ((scrollTop + 100) >= portfolioOffset) {
+			addColor();
+		}
+	}
+
+	function addColor() { console.log('add color');
+		
+	}
 
 }); //document.ready
 
@@ -201,7 +221,7 @@ $(document).ready(function() {
 			$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/165483112/window-painting-original-watercolor?ref=shop_home_active');
 			$('.red-window-paypal').html(paypalForm);
 		});
-		
+
 		$('.red-window-print').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Red Window"><input type="hidden" name="item_number" value="red-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/164841917/window-painting-print-from-original?ref=shop_home_active');
