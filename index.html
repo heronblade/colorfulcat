@@ -86,23 +86,88 @@
 					<div class="row">
 						<div class="well well-lg col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 well3">
 							<div class="shipping">
-								<h4 class="shipping-question">Shipping <i class="icon-question shipping-question"></i></h4>
-								<span class="shipping-question-answered">All of Colorful Cats artwork is packaged with the greatest care in a hard protective tube and shipped via USPS with tracking information provided upon request.  All art is wrapped decoratively for gift giving!  We will ship items 1 to 2 business days after receiving payment.  Custom paintings will be shipped after painting is completed and fully dry to touch. (7-14 business days)</span>
+								<h4 class="shipping-question" data-toggle="modal" data-target="#shippingModal">Shipping <i class="icon-question shipping-question"></i></h4>
+								
 							</div>
 							<div class="refunds-exchanges">
-								<h4 class="refund-exchanges-question">Refunds and Exchanges <i class="icon-question refund-exchange-question"></i></h4>
-								<span class="refund-exchange-question-answered">I want every buyer to be happy with their purchase! If there is any displeasure please contact me within a week of receipt so we can resolve the problem, exchange or fully return the piece. </br>*All returns must be shipped back undamaged and in original condition. </br>*Any shipping costs will be your responsibility and will not be refunded.</span>
+								<h4 class="refund-exchanges-question" data-toggle="modal" data-target="#refundsExchangesModal">Refunds and Exchanges <i class="icon-question refund-exchange-question"></i></h4>
+								
 							</div>
 							<div class="policies">
-								<h4 class="policies-question">Policies <i class="icon-question policies-question"></i></h4>
-								<span class="policies-question-answered">All art is copyrighted and the property of artist Rachel Byler and may not be reproduced.  All artwork is signed by the artist. My prints and paintings are designed to fit into standard frames. Frames and Mat not included.</span>
+
+
+								<h4 class="policies-question" data-toggle="modal" data-target="#modalPolicies">Policies <i class="icon-question policies-question"></i></h4>
+								
+								
+								
 							</div>
 							<div class="materials">
-								<h4 class="materials-question">Materials <i class="icon-question materials-question"></i></h4>
-								<span class="materials-question-answered">Orignals</br>
-								<p>High quality watercolors on 140lb. Cold Press Watercolor Paper</p></br>
-								Prints</br>
-								<p>High quality prints from a professional Canon printer on either, Photo paper (Semi Gloss):  has a soft gloss finish and is more delicate.  Watercolor paper(140 lb. Cold Pressed):  feels and looks more like an original however will not be as crisp (more faded) of an image because the paper absorbs more ink.</p></span>
+								<h4 class="materials-question" data-toggle="modal" data-target="#modalMaterials">Materials <i class="icon-question materials-question"></i></h4>
+								
+							</div>
+
+							<div id="modals">
+
+								<div class="modal fade" id="shippingModal" tabindex="-1" role="dialog" aria-labelledby="shippingModal" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<span class="modal-title" id="shippingModal">Shipping Information</span>
+											</div>
+											<div class="modal-body">
+												<span class="shipping-question-answered">All of Colorful Cats artwork is packaged with the greatest care in a hard protective tube and shipped via USPS with tracking information provided upon request.  All art is wrapped decoratively for gift giving!  We will ship items 1 to 2 business days after receiving payment.  Custom paintings will be shipped after painting is completed and fully dry to touch. (7-14 business days)</span>
+											</div>
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+
+								<div class="modal fade" id="refundsExchangesModal" tabindex="-1" role="dialog" aria-labelledby="refundsExchangesModal" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<span class="modal-title" id="refundsExchangesModal">Refunds & Exchanges</span>
+											</div>
+											<div class="modal-body">
+												<span class="refund-exchange-question-answered">I want every buyer to be happy with their purchase! If there is any displeasure please contact me within a week of receipt so we can resolve the problem, exchange or fully return the piece. </br>*All returns must be shipped back undamaged and in original condition. </br>*Any shipping costs will be your responsibility and will not be refunded.</span>
+											</div>
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+
+								<div class="modal fade" id="modalPolicies" tabindex="-1" role="dialog" aria-labelledby="modalPolicies" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<span class="modal-title" id="modalPolicies">Policies</span>
+											</div>
+											<div class="modal-body">
+												<span class="policies-question-answered">All art is copyrighted and the property of artist Rachel Byler and may not be reproduced.  All artwork is signed by the artist. My prints and paintings are designed to fit into standard frames. Frames and Mat not included.</span>
+											</div>
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+
+								<div class="modal fade" id="modalMaterials" tabindex="-1" role="dialog" aria-labelledby="modalMaterials" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<span class="modal-title" id="modalMaterials">Policies</span>
+											</div>
+											<div class="modal-body">
+												<span class="materials-question-answered">Orignals</br>
+													<p>High quality watercolors on 140lb. Cold Press Watercolor Paper</p></br>
+													Prints</br>
+													<p>High quality prints from a professional Canon printer on either, Photo paper (Semi Gloss):  has a soft gloss finish and is more delicate, or Watercolor paper(140 lb. Cold Pressed):  feels and looks more like an original however will not be as crisp (more faded) of an image because the paper absorbs more ink.</p>
+												</span>
+											</div>
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+								
 							</div>
 						</div>
 					</div>
@@ -888,7 +953,7 @@
 								<div class="thumb-year">Year: 2013</div>
 								<div class="thumb-size">Original Size: 9"x12"</div>
 								<div class="thumb-prints">Print Sizes available: 8"x10" & 11"x14"</div>
-								<h4></br>*Currently for sale at </br> <a href="https://www.google.com/maps/preview#!q=105+S+Market+St+Mechanicsburg%2C+PA+17055&data=!1m4!1m3!1d2293!2d-77.007126!3d40.212251!4m12!2m11!1m10!1s0x89c8e808fbfec7d9%3A0x5e4894825a9ed9e6!3m8!1m3!1d48699!2d-76.8804254!3d40.2821445!3m2!1i1024!2i768!4f13.1" target="_blank">2nd Floor Gallery</a></h4>
+								<h4></br>*Currently for sale at <a href="https://www.google.com/maps/preview#!q=105+S+Market+St+Mechanicsburg%2C+PA+17055&data=!1m4!1m3!1d2293!2d-77.007126!3d40.212251!4m12!2m11!1m10!1s0x89c8e808fbfec7d9%3A0x5e4894825a9ed9e6!3m8!1m3!1d48699!2d-76.8804254!3d40.2821445!3m2!1i1024!2i768!4f13.1" target="_blank">2nd Floor Gallery</a></h4>
 								<!-- <button class="btn btn-primary order-btn" data-toggle="modal" data-target="#kovuModal">Order Now</button> -->
 								<!-- Modal -->
 								<div class="modal fade" id="kovuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabelKovu" aria-hidden="true">
@@ -2258,7 +2323,7 @@
 					</li>
 					<li class="etsy">
 						<a href="http://www.etsy.com/shop/TheColorfulCatStudio" alt="etsy page for the colorful cat studio">
-							<img src="includes/images/logo/etsy-blue.png" alt="etsy logo">
+							<img src="includes/images/logo/black-etsy.png" alt="etsy logo">
 						</a>
 					</li>
 					<li class="email">

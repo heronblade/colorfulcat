@@ -107,7 +107,8 @@
 	}
 
 	.shipping, .refunds-exchanges, .policies, .materials {
-		padding-top: 1%;
+		margin: 0 5% 0 0;
+		float: left;
 	}
 
 // About
@@ -368,6 +369,7 @@
 
 		.icon-facebook, .icon-pinterest, .icon-question, .icon-envelope {
 			font-size: 4em;
+			color: #000;
 		}
 
 		.facebook {
@@ -437,6 +439,14 @@
 	@media (max-width: 767px) {
 		.portfolio-nav {
 			font-size: 1.5em;
+		}
+
+		.shipping, .refunds-exchanges, .policies, .materials {
+			float: none;
+
+			.icon-question {
+				display: none;
+			}
 		}
 	}
 
