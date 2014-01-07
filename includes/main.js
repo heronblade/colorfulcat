@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 
 	//Scrolling images into view
-	//$(window).scroll(checkPortfolioHeight);
+	$(window).scroll(checkPortfolioHeight);
 
 	function checkPortfolioHeight() {
 		var scrollTop = $(window).scrollTop(); //console.log('scrollTop ' + scrollTop);
@@ -173,8 +173,22 @@ $(document).ready(function() {
 	}
 
 	function addColor() { console.log('add color');
-		
+
+		//get an array of all thumbnails
+
+		function isElementInViewport (el) {
+			var rect = el.getBoundingClientRect();
+
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+			);
+		}
 	}
+
+
 
 }); //document.ready
 
