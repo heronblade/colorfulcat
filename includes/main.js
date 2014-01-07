@@ -168,24 +168,71 @@ $(document).ready(function() {
 		var distance = (portfolioOffset - scrollTop) + 100; //console.log('distance ' + distance);
 
 		if ((scrollTop + 100) >= portfolioOffset) {
-			addColor();
+			setTimeout(addColor, 500);
 		}
 	}
 
-	function addColor() { console.log('add color');
+	function addColor() { console.log(''); console.log('add color');
+
+		var windowWidth = $(window).width();
+		var windowHeight = $(window).height();
+
+
+		// $('.thumbnail').each(function(element) {
+		// 	console.log(element);
+		// 	console.log($(this));
+		// 	var rect = $(this).getBoundingClientRect(); //console.log(rect);
+		// });
+
+
+		// $('.thumbnail').each(function() {
+		// 	var currentThumb = $(this).getBoundingClientRect();
+		// 	var rect = $(this).offset(); console.log(rect);
+
+		// 	var top = rect.top;
+		// 	var left = rect.left;
+		// 	var bottom = rect.bottom;
+		// 	var right = rect.right;
+
+		// 	if (top >= 0 && left >= 0 && bottom <= windowHeight && right <= windowWidth) {
+		// 		console.log(currentThumb);
+		// 	}
+		// });
 
 		//get an array of all thumbnails
+		var thumbs = $('.thumbnail').get(); //console.log(thumbs);
 
-		function isElementInViewport (el) {
-			var rect = el.getBoundingClientRect();
+		var thumbCount = thumbs.length; //console.log(thumbCount);
+		
 
-			return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-				rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-			);
+		for (var i = 0; i < thumbCount; i++) {
+			var currentThumb = thumbs[i];
+			var rect = currentThumb.getBoundingClientRect();
+
+			var top = rect.top;
+			var left = rect.left;
+			var bottom = rect.bottom;
+			var right = rect.right;
+
+			if (top >= 0 && left >= 0 && bottom <= windowHeight && right <= windowWidth) {
+				// console.log('this ' + i);
+				// console.log('top: ' + top + ' left: ' + left + ' bottom: ' + bottom + ' right: ' + right);
+				// console.log('');
+				var changeThumb = thumbs[i]; //console.log(changeThumb);
+			}
 		}
+
+
+		// function isElementInViewport (el) {
+		// 	var rect = el.getBoundingClientRect();
+
+		// 	return (
+		// 		rect.top >= 0 &&
+		// 		rect.left >= 0 &&
+		// 		rect.bottom <= $(window).height() &&
+		// 		rect.right <= $(window).width()
+		// 	);
+		// }
 	}
 
 
