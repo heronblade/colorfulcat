@@ -163,9 +163,9 @@ $(document).ready(function() {
 	$(window).scroll(checkPortfolioHeight);
 
 	function checkPortfolioHeight() {
-		var scrollTop = $(window).scrollTop(); //console.log('scrollTop ' + scrollTop);
-		var portfolioOffset = $('#portfolio').offset().top; //console.log('portfolioOffset ' + portfolioOffset);
-		var distance = (portfolioOffset - scrollTop) + 100; //console.log('distance ' + distance);
+		var scrollTop = $(window).scrollTop(); console.log('scrollTop ' + scrollTop);
+		var portfolioOffset = $('#portfolio').offset().top; console.log('portfolioOffset ' + portfolioOffset);
+		var distance = (portfolioOffset - scrollTop) + 100; console.log('distance ' + distance);
 
 		if ((scrollTop + 100) >= portfolioOffset) {
 			setTimeout(addColor, 500);
@@ -177,28 +177,6 @@ $(document).ready(function() {
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 
-
-		// $('.thumbnail').each(function(element) {
-		// 	console.log(element);
-		// 	console.log($(this));
-		// 	var rect = $(this).getBoundingClientRect(); //console.log(rect);
-		// });
-
-
-		// $('.thumbnail').each(function() {
-		// 	var currentThumb = $(this).getBoundingClientRect();
-		// 	var rect = $(this).offset(); console.log(rect);
-
-		// 	var top = rect.top;
-		// 	var left = rect.left;
-		// 	var bottom = rect.bottom;
-		// 	var right = rect.right;
-
-		// 	if (top >= 0 && left >= 0 && bottom <= windowHeight && right <= windowWidth) {
-		// 		console.log(currentThumb);
-		// 	}
-		// });
-
 		//get an array of all thumbnails
 		var thumbs = $('.thumbnail').get(); //console.log(thumbs);
 
@@ -207,32 +185,31 @@ $(document).ready(function() {
 
 		for (var i = 0; i < thumbCount; i++) {
 			var currentThumb = thumbs[i];
-			var rect = currentThumb.getBoundingClientRect();
-
-			var top = rect.top;
-			var left = rect.left;
-			var bottom = rect.bottom;
-			var right = rect.right;
-
-			if (top >= 0 && left >= 0 && bottom <= windowHeight && right <= windowWidth) {
-				// console.log('this ' + i);
-				// console.log('top: ' + top + ' left: ' + left + ' bottom: ' + bottom + ' right: ' + right);
-				// console.log('');
-				var changeThumb = thumbs[i]; //console.log(changeThumb);
+			var isInView = isScrolledIntoView(currentThumb);
+			
+			if (isInView) {
+				currentThumb.style.webkitFilter = 'grayscale(0%)';
+				console.log('');
+				console.log('-------------------');
+				var josh = isScrolledIntoView(currentThumb);
+				console.log('-------------------');
+				console.log('');
+			} else {
+				currentThumb.style.webkitFilter = 'grayscale(100%)';
 			}
 		}
 
+		function isScrolledIntoView(elem) { console.log('isScrolledIntoView');
+			var docViewTop = $(window).scrollTop(); 
+			var docViewBottom = docViewTop + $(window).height();
 
-		// function isElementInViewport (el) {
-		// 	var rect = el.getBoundingClientRect();
+			var elemTop = $(elem).offset().top;
+			var elemBottom = elemTop + $(elem).height(); 
 
-		// 	return (
-		// 		rect.top >= 0 &&
-		// 		rect.left >= 0 &&
-		// 		rect.bottom <= $(window).height() &&
-		// 		rect.right <= $(window).width()
-		// 	);
-		// }
+			console.log('docViewTop: ' + docViewTop + ' docViewBottom: ' + docViewBottom + ' elemTop: ' + elemTop + ' elemBottom: ' + elemBottom);
+
+			return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) &&  (elemTop >= docViewTop) );
+		}
 	}
 
 
