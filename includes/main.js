@@ -167,48 +167,46 @@ $(document).ready(function() {
 		var portfolioOffset = $('#portfolio').offset().top; console.log('portfolioOffset ' + portfolioOffset);
 		var distance = (portfolioOffset - scrollTop) + 100; console.log('distance ' + distance);
 
-		if ((scrollTop + 100) >= portfolioOffset) {
+		if ((scrollTop + 400) >= portfolioOffset) {
 			setTimeout(addColor, 500);
 		}
 	}
 
-	function addColor() { console.log(''); console.log('add color');
+	function addColor() { //console.log(''); console.log('add color');
 
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 
 		//get an array of all thumbnails
-		var thumbs = $('.thumbnail').get(); //console.log(thumbs);
-
-		var thumbCount = thumbs.length; //console.log(thumbCount);
-		
+		var thumbs = $('.thumbnail').get();
+		var thumbCount = thumbs.length;
 
 		for (var i = 0; i < thumbCount; i++) {
 			var currentThumb = thumbs[i];
-			var isInView = isScrolledIntoView(currentThumb);
-			
-			if (isInView) {
+
+			var image = $(currentThumb).find('img');
+
+			var space = isScrolledIntoView(image);
+
+			if (space) {
 				currentThumb.style.webkitFilter = 'grayscale(0%)';
-				console.log('');
-				console.log('-------------------');
-				var josh = isScrolledIntoView(currentThumb);
-				console.log('-------------------');
-				console.log('');
 			} else {
 				currentThumb.style.webkitFilter = 'grayscale(100%)';
 			}
 		}
 
-		function isScrolledIntoView(elem) { console.log('isScrolledIntoView');
+		function isScrolledIntoView(elem) { //console.log('isScrolledIntoView');
 			var docViewTop = $(window).scrollTop(); 
 			var docViewBottom = docViewTop + $(window).height();
 
 			var elemTop = $(elem).offset().top;
 			var elemBottom = elemTop + $(elem).height(); 
 
-			console.log('docViewTop: ' + docViewTop + ' docViewBottom: ' + docViewBottom + ' elemTop: ' + elemTop + ' elemBottom: ' + elemBottom);
-
-			return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) &&  (elemTop >= docViewTop) );
+			if (elemBottom <= docViewBottom) {
+				return true;
+			} else {
+				return false;
+			}
 		}
 	}
 
