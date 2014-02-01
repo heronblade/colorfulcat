@@ -72,8 +72,8 @@ $(document).ready(function() {
 	});
 
 	$('.order-btn').on('click', function() {
-		var target = $(this).data('target'); console.log('target ' + target);
-		var origVsPrint = $(target + ' .modal-body').children('.modal-orig-print').size(); console.log('origVsPrint ' + origVsPrint);
+		var target = $(this).data('target');
+		var origVsPrint = $(target + ' .modal-body').children('.modal-orig-print').size();
 
 		if (origVsPrint === 0) {
 			$('.btn-etsy').removeAttr('disabled');
@@ -163,16 +163,16 @@ $(document).ready(function() {
 	$(window).scroll(checkPortfolioHeight);
 
 	function checkPortfolioHeight() {
-		var scrollTop = $(window).scrollTop(); console.log('scrollTop ' + scrollTop);
-		var portfolioOffset = $('#portfolio').offset().top; console.log('portfolioOffset ' + portfolioOffset);
-		var distance = (portfolioOffset - scrollTop) + 100; console.log('distance ' + distance);
+		var scrollTop = $(window).scrollTop();
+		var portfolioOffset = $('#portfolio').offset().top;
+		var distance = (portfolioOffset - scrollTop) + 100;
 
 		if ((scrollTop + 400) >= portfolioOffset) {
 			setTimeout(addColor, 500);
 		}
 	}
 
-	function addColor() { //console.log(''); console.log('add color');
+	function addColor() {
 
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
@@ -195,7 +195,7 @@ $(document).ready(function() {
 			}
 		}
 
-		function isScrolledIntoView(elem) { //console.log('isScrolledIntoView');
+		function isScrolledIntoView(elem) {
 			var docViewTop = $(window).scrollTop(); 
 			var docViewBottom = docViewTop + $(window).height();
 
