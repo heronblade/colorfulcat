@@ -10,16 +10,16 @@ $(document).ready(function() {
 	resizeHomeDiv();
 	portfolioAnchorTags();
 
-	$(window).resize(function() { resizeHomeDiv(); resizePort(); portfolioAnchorTags(); resizeAbout(); });
-	$(window).load(function() { resizePort(); resizeAbout(); });
+	$(window).resize(function() { resizeHomeDiv(); resizePort(); portfolioAnchorTags(); });
+	$(window).load(function() { resizePort(); });
 
 	function resizeHomeDiv() {
-		var windowHeight = $(window).height();
+		var windowHeight = $(window).height() + 500;
 		var windowWidth = $(window).width();
 		$('#home').css({'height': windowHeight, 'width': windowWidth});
 
 		var fromTopHome = $('.down-from-home').offset().top * 1;
-		var x = windowHeight - fromTopHome - 57;
+		var x = windowHeight - fromTopHome - 557;
 		$('.down-from-home').css({'margin-top': x, 'z-index': 10});
 	}
 
@@ -196,11 +196,11 @@ $(document).ready(function() {
 		}
 
 		function isScrolledIntoView(elem) {
-			var docViewTop = $(window).scrollTop(); 
+			var docViewTop = $(window).scrollTop();
 			var docViewBottom = docViewTop + $(window).height();
 
 			var elemTop = $(elem).offset().top;
-			var elemBottom = elemTop + $(elem).height(); 
+			var elemBottom = elemTop + $(elem).height();
 
 			if (elemBottom <= docViewBottom) {
 				return true;
