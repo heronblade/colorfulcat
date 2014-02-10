@@ -18,9 +18,9 @@ $(document).ready(function() {
 		var windowWidth = $(window).width();
 		$('#home').css({'height': windowHeight, 'width': windowWidth});
 
-		var fromTopHome = $('.down-from-home').offset().top * 1;
-		var x = windowHeight - fromTopHome - 557;
-		$('.down-from-home').css({'margin-top': x, 'z-index': 10});
+		// var fromTopHome = $('.down-from-home').offset().top * 1;
+		// var x = windowHeight - fromTopHome - 557;
+		// $('.down-from-home').css({'margin-top': x, 'z-index': 10});
 	}
 
 	function resizeAbout() {
