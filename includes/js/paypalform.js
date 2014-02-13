@@ -3,8 +3,8 @@ var paypalForm =
 	<input type="hidden" name="cmd" value="_xclick">
 	<input type="hidden" name="business" value="DDFZEXCEVEJQG">
 	<input type="hidden" name="lc" value="US">
-	<input type="hidden" name="item_name" value="5th Avenue">
-	<input type="hidden" name="item_number" value="5th-avenue">
+	<input type="hidden" name="item_name" value="ChangeThis">
+	<input type="hidden" name="item_number" value="changethis">
 	<input type="hidden" name="button_subtype" value="services">
 	<input type="hidden" name="currency_code" value="USD">
 	<input type="hidden" name="shipping" value="5.00">
