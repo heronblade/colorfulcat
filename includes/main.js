@@ -265,7 +265,7 @@ $(document).ready(function() {
 		});
 
 
-		$('.fairy-tale-chapter-3-orig').on('click', function() { 
+		$('.fairy-tale-chapter-3-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Fairy Tale Chapter 3"><input type="hidden" name="item_number" value="fairy-tale-chapter-3"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">Original $450 USD</option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="450"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.fairy-tale-chapter-3-btn').attr('href', 'https://www.etsy.com/listing/177587385/original-french-town-painting-original?ref=shop_home_active_19');
 			$('.fairy-tale-chapter-3-paypal').html(paypalForm);
@@ -277,7 +277,7 @@ $(document).ready(function() {
 			$('.fairy-tale-chapter-3-paypal').html(paypalForm);
 		});
 
-		$('.cherries-orig').on('click', function() { 
+		$('.cherries-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Cherries"><input type="hidden" name="item_number" value="cherries"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">5x7 $95 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="95"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.cherries-btn').attr('href', 'https://www.etsy.com/listing/178104682/sale-original-cherry-painting-original?ref=shop_home_active_4');
 			$('.cherries-paypal').html(paypalForm);
@@ -289,9 +289,9 @@ $(document).ready(function() {
 			$('.cherries-paypal').html(paypalForm);
 		});
 
-		$('.frozen-leaves-orig').on('click', function() { 
+		$('.frozen-leaves-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Frozen Leaves"><input type="hidden" name="item_number" value="frozen-leaves"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">5x7 $95 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="95"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
-			
+
 			$('.frozen-leaves-btn').attr('href', 'https://www.etsy.com/listing/178115493/sale-original-winter-painting-original?ref=shop_home_active_5');
 			$('.frozen-leaves-paypal').html(paypalForm);
 		});
@@ -308,7 +308,7 @@ $(document).ready(function() {
 			$('.anatomy-study-paypal').html(paypalForm);
 		});
 
-		$('.sparrow-orig').on('click', function() { 
+		$('.sparrow-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Sparrow"><input type="hidden" name="item_number" value="sparrow"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">8x12 $125 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="125"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.sparrow-paypal').html(paypalForm);
 			$('.sparrow-btn').hide();
@@ -321,7 +321,7 @@ $(document).ready(function() {
 			$('.sparrow-btn').show();
 		});
 
-		$('.icy-waters-orig').on('click', function() { 
+		$('.icy-waters-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Icy Waters"><input type="hidden" name="item_number" value="icy-waters"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">$200 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.icy-waters-btn').attr('href', '');
 			$('.icy-waters-paypal').html(paypalForm);
@@ -335,7 +335,7 @@ $(document).ready(function() {
 			$('.icy-waters-btn').show();
 		});
 
-		$('.horse-shoe-orig').on('click', function() { 
+		$('.horse-shoe-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Horseshoe Crab"><input type="hidden" name="item_number" value="horseshoe-crab"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">11x14 $200 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.horse-shoe-btn').attr('href', '');
 			$('.horse-shoe-paypal').html(paypalForm);
@@ -349,7 +349,7 @@ $(document).ready(function() {
 			$('.horse-shoe-btn').show();
 		});
 
-		$('.shark-eye-shell-orig').on('click', function() { 
+		$('.shark-eye-shell-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Shark Eye Shell"><input type="hidden" name="item_number" value="shark-eye-shell"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">9x12 $150 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="150"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.shark-eye-shell-btn').attr('href', '');
 			$('.shark-eye-shell-paypal').html(paypalForm);
@@ -363,7 +363,7 @@ $(document).ready(function() {
 			$('.shark-eye-shell-btn').show();
 		});
 
-		$('.sea-scallop-orig').on('click', function() { 
+		$('.sea-scallop-orig').on('click', function() {
 			var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Sea Scallop"><input type="hidden" name="item_number" value="sea-scallop"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">9x12 $150 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="150"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.sea-scallop-btn').attr('href', '');
 			$('.sea-scallop-paypal').html(paypalForm);
@@ -377,7 +377,7 @@ $(document).ready(function() {
 			$('.sea-scallop-btn').show();
 		});
 
-		$('.bag-end-orig').on('click', function() { 
+		$('.bag-end-orig').on('click', function() {
 			$('.bag-end-btn').attr('href', '');
 			$('.bag-end-paypal').html('');
 			$('.bag-end-btn').hide();
@@ -390,7 +390,7 @@ $(document).ready(function() {
 			$('.bag-end-btn').show();
 		});
 
-		$('.5th-avenue-orig').on('click', function() { 
+		$('.5th-avenue-orig').on('click', function() {
 			$('.5th-avenue-btn').attr('href', '');
 			$('.5th-avenue-paypal').html('');
 			$('.5th-avenue-btn').hide();
@@ -401,6 +401,20 @@ $(document).ready(function() {
 			$('.5th-avenue-btn').attr('href', 'https://www.etsy.com/listing/176091146/garden-painting-print-from-original?ref=shop_home_active_5');
 			$('.5th-avenue-paypal').html(paypalForm);
 			$('.5th-avenue-btn').show();
+		});
+
+		$('.tidal-conch-orig').on('click', function() {
+			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="5th Avenue"><input type="hidden" name="item_number" value="5th-avenue"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">8x10 $125 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="125"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+			$('.tidal-conch-btn').attr('href', '');
+			$('.tidal-conch-paypal').html(paypalForm);
+			$('.tidal-conch-btn').hide();
+		});
+
+		$('.tidal-conch-print').on('click', function() {
+			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="5th Avenue"><input type="hidden" name="item_number" value="5th-avenue"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="5x7">5x7 $15 USD</option><option value="8x10">8x10 $25 USD</option><option value="9x12">8x12 $30 USD</option><option value="11x14">11x14 $40 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="5x7"><input type="hidden" name="option_amount0" value="15"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select0" value="9x12"><input type="hidden" name="option_amount0" value="30"><input type="hidden" name="option_select0" value="11x14"><input type="hidden" name="option_amount0" value="40"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+			$('.tidal-conch-btn').attr('href', 'http://www.etsy.com/listing/176630594/seashell-painting-3-print-from-original?ref=shop_home_active_3');
+			$('.tidal-conch-paypal').html(paypalForm);
+			$('.tidal-conch-btn').show();
 		});
 
 }); //document.ready
