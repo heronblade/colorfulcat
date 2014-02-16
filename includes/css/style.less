@@ -65,7 +65,7 @@
 
 // Home
 
-	#josh {
+	#home-wrap {
 		background: url("../images/poppy-background-2.png") no-repeat;
 		background-position: 0 0;
 	}
@@ -156,7 +156,6 @@
 
 	#portfolio {
 		background: #fff;
-		height: 3000px;
 
 		.btn {
 			margin-top: 3%;
@@ -205,6 +204,7 @@
 
 		.port-thumb {
 			margin: 7% 0 0 0;
+			// clear: left;
 		}
 	}
 
@@ -224,7 +224,6 @@
 
 	.thumbnail {
 		border: none !important;
-		background-color: #C3C3C3;
 		.greyout;
 		-webkit-filter: grayscale(100%);
 	}
@@ -251,6 +250,8 @@
 	}
 
 	.caption {
+
+		background-color: #C3C3C3;
 
 		p a {
 			background: @grey;
@@ -470,7 +471,7 @@
 
 	@media (max-width: 990px) {
 		.shipping, .refunds-exchanges, .policies, .materials {
-			margin: 0 3% 0 3%;
+			margin: 2% 3% 0 3%;
 		}
 	}
 

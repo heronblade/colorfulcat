@@ -10,11 +10,11 @@ $(document).ready(function() {
 	resizeHomeDiv();
 	portfolioAnchorTags();
 
-	$(window).resize(function() { resizeHomeDiv(); resizePort(); portfolioAnchorTags(); });
-	$(window).load(function() { resizePort(); });
+	$(window).resize(function() { resizeHomeDiv(); portfolioAnchorTags(); });
+	// $(window).load(function() { leftAlignLastThumbs(); });
 
 	function resizeHomeDiv() {
-		var windowHeight = $(window).height() + 1000;
+		var windowHeight = $(window).height() + 1500;
 		var windowWidth = $(window).width();
 		$('#home').css({'height': windowHeight, 'width': windowWidth});
 
@@ -29,22 +29,6 @@ $(document).ready(function() {
 		var well3 = $('.well3').height();
 		var both = well1 + well2 + well3;
 		$('#about').height(both + 420);
-	}
-
-	function resizePort() {
-		//have to figure out the current height of each of the divs, then add it all up
-		var peopleHeight = $('#people').outerHeight(true);
-		var animalHeight = $('#animals').outerHeight(true);
-		var placesHeight = $('#places-things').outerHeight(true);
-		var tallest = Math.max(peopleHeight, animalHeight, placesHeight);
-		tallest = tallest + 300;
-
-		if ($(window).width() < 768) {
-			var actualHeight = peopleHeight + animalHeight + placesHeight + 300;
-			$('#portfolio').css('height', actualHeight);
-		} else {
-			$('#portfolio').css('height', tallest);
-		}
 	}
 
 	function portfolioAnchorTags() {
