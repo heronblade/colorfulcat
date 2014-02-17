@@ -7,22 +7,11 @@ $(document).ready(function() {
 	//variables
 	var windowHeight = $(window).height();
 
-	//On page load make the home div the width and height of the current window, also resize the portfolio div
-	resizeHomeDiv();
+	//On page load resize the portfolio div
 	portfolioAnchorTags();
 
-	$(window).resize(function() { resizeHomeDiv(); portfolioAnchorTags(); });
-	// $(window).load(function() { leftAlignLastThumbs(); });
-
-	function resizeHomeDiv() {
-		var windowHeight = $(window).height() + 1500;
-		var windowWidth = $(window).width();
-		$('#home').css({'height': windowHeight, 'width': windowWidth});
-
-		// var fromTopHome = $('.down-from-home').offset().top * 1;
-		// var x = windowHeight - fromTopHome - 557;
-		// $('.down-from-home').css({'margin-top': x, 'z-index': 10});
-	}
+	$(window).resize(function() { portfolioAnchorTags(); });
+	$(window).load(function() { addLefters(); addRighters(); });
 
 	function resizeAbout() {
 		var well1 = $('.well1').height();
@@ -38,6 +27,16 @@ $(document).ready(function() {
 		} else {
 			$('.port-nav-anchor').addClass('disabled');
 		}
+	}
+
+	function addLefters() {
+		var oceanStudyHeight = $('#ocean-study').height();
+		$('.ocean-study-lefter').css('height', oceanStudyHeight);
+	}
+
+	function addRighters() {
+		var oceanStudyHeight = $('#ocean-study').height();
+		$('.ocean-study-righter').css('height', oceanStudyHeight);
 	}
 
 	$(function() {
