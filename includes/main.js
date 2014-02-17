@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
 	//image popups
-	// $('.portfolio-images a.port-popup').Chocolat();
-	$('.portfolio-images a.port-popup').magnificPopup({type:'image'});
+	$('.portfolio-images a.port-popup').Chocolat();
 
 	//variables
 	var windowHeight = $(window).height();
