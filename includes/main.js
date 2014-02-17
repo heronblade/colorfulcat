@@ -12,7 +12,7 @@ $(document).ready(function() {
 	portfolioAnchorTags();
 
 	$(window).resize(function() { resizeHomeDiv(); portfolioAnchorTags(); });
-	// $(window).load(function() { leftAlignLastThumbs(); });
+	$(window).load(function() { addLefters(); addRighters(); });
 
 	function resizeHomeDiv() {
 		var windowHeight = $(window).height() + 1500;
@@ -38,6 +38,16 @@ $(document).ready(function() {
 		} else {
 			$('.port-nav-anchor').addClass('disabled');
 		}
+	}
+
+	function addLefters() {
+		var oceanStudyHeight = $('#ocean-study').height();
+		$('.ocean-study-lefter').css('height', oceanStudyHeight);
+	}
+
+	function addRighters() {
+		var oceanStudyHeight = $('#ocean-study').height();
+		$('.ocean-study-righter').css('height', oceanStudyHeight);
 	}
 
 	$(function() {
