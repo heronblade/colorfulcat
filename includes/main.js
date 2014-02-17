@@ -15,7 +15,7 @@ $(document).ready(function() {
 	$(window).load(function() { addLefters(); addRighters(); });
 
 	function resizeHomeDiv() {
-		var windowHeight = $(window).height() + 1500;
+		var windowHeight = $(window).height() + 500;
 		var windowWidth = $(window).width();
 		$('#home').css({'height': windowHeight, 'width': windowWidth});
 
