@@ -60,78 +60,14 @@ $(document).ready(function() {
 	$('.modal-orig-print').on('click', function() {
 		$('.btn-etsy').removeAttr('disabled');
 		$('.btn-paypal').removeAttr('disabled');
-	});
-
-	$('.btn-paypal').on('click', function() {
 		$('.modal-size').show();
 		$('.modal-paypal').show();
 	});
 
-
-	//When question mark's clicked, show the next span
-	//Hide them all first though
-		// $('.shipping-question-answered').hide();
-		// $('.refund-exchange-question-answered').hide();
-		// $('.policies-question-answered').hide();
-		// $('.materials-question-answered').hide();
-
-		// $('.shipping-question').on('click', function() {
-		// 	if ($('.shipping-question-answered').css('display') == 'none') {
-		// 		$('.shipping-question-answered').show();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight + 100;
-		// 		$('#about').height(newHeight);
-		// 	} else {
-		// 		$('.shipping-question-answered').hide();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight - 100;
-		// 		$('#about').height(newHeight);
-		// 	}
-		// });
-
-		// $('.refund-exchanges-question').on('click', function() {
-		// 	if ($('.refund-exchange-question-answered').css('display') == 'none') {
-		// 		$('.refund-exchange-question-answered').show();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight + 100;
-		// 		$('#about').height(newHeight);
-		// 	} else {
-		// 		$('.refund-exchange-question-answered').hide();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight - 100;
-		// 		$('#about').height(newHeight);
-		// 	}
-		// });
-
-		// $('.policies-question').on('click', function() {
-		// 	if ($('.policies-question-answered').css('display') == 'none') {
-		// 		$('.policies-question-answered').show();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight + 100;
-		// 		$('#about').height(newHeight);
-		// 	} else {
-		// 		$('.policies-question-answered').hide();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight - 100;
-		// 		$('#about').height(newHeight);
-		// 	}
-		// });
-
-		// $('.materials-question').on('click', function() {
-		// 	if ($('.materials-question-answered').css('display') == 'none') {
-		// 		$('.materials-question-answered').show();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight + 100;
-		// 		$('#about').height(newHeight);
-		// 	} else {
-		// 		$('.materials-question-answered').hide();
-		// 		var aboutHeight = $('#about').height();
-		// 		var newHeight = aboutHeight - 150;
-		// 		$('#about').height(newHeight);
-		// 	}
-		// });
-
-
+	// $('.btn-paypal').on('click', function() {
+	// 	$('.modal-size').show();
+	// 	$('.modal-paypal').show();
+	// });
 
 	//Scrolling images into view
 	$(window).scroll(checkPortfolioHeight);
