@@ -55,6 +55,7 @@ $(document).ready(function() {
 		}
 
 		$('.modal-paypal').hide();
+		
 	})
 
 	$('.modal-orig-print').on('click', function() {
