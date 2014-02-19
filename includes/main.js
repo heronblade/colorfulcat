@@ -55,7 +55,7 @@ $(document).ready(function() {
 		}
 
 		$('.modal-paypal').hide();
-		
+
 	})
 
 	$('.modal-orig-print').on('click', function() {
@@ -71,55 +71,55 @@ $(document).ready(function() {
 	// });
 
 	//Scrolling images into view
-	$(window).scroll(checkPortfolioHeight);
+	// $(window).scroll(checkPortfolioHeight);
 
-	function checkPortfolioHeight() {
-		var scrollTop = $(window).scrollTop();
-		var portfolioOffset = $('#portfolio').offset().top;
-		var distance = (portfolioOffset - scrollTop) + 100;
+	// function checkPortfolioHeight() {
+	// 	var scrollTop = $(window).scrollTop();
+	// 	var portfolioOffset = $('#portfolio').offset().top;
+	// 	var distance = (portfolioOffset - scrollTop) + 100;
 
-		if ((scrollTop + 400) >= portfolioOffset) {
-			setTimeout(addColor, 500);
-		}
-	}
+	// 	if ((scrollTop + 400) >= portfolioOffset) {
+	// 		setTimeout(addColor, 500);
+	// 	}
+	// }
 
-	function addColor() {
+	// function addColor() {
 
-		var windowWidth = $(window).width();
-		var windowHeight = $(window).height();
+	// 	var windowWidth = $(window).width();
+	// 	var windowHeight = $(window).height();
 
-		//get an array of all thumbnails
-		var thumbs = $('.thumbnail').get();
-		var thumbCount = thumbs.length;
+	// 	//get an array of all thumbnails
+	// 	var thumbs = $('.thumbnail').get();
+	// 	var thumbCount = thumbs.length;
 
-		for (var i = 0; i < thumbCount; i++) {
-			var currentThumb = thumbs[i];
+	// 	for (var i = 0; i < thumbCount; i++) {
+	// 		var currentThumb = thumbs[i];
 
-			var image = $(currentThumb).find('img');
+	// 		var image = $(currentThumb).find('img');
 
-			var space = isScrolledIntoView(image);
+	// 		var space = isScrolledIntoView(image);
 
-			if (space) {
-				currentThumb.style.webkitFilter = 'grayscale(0%)';
-			} else {
-				currentThumb.style.webkitFilter = 'grayscale(100%)';
-			}
-		}
+	// 		if (space) {
+	// 			currentThumb.style.webkitFilter = 'grayscale(0%)';
+	// 		} else {
+	// 			currentThumb.style.webkitFilter = 'grayscale(100%)';
+	// 		}
+	// 	}
 
-		function isScrolledIntoView(elem) {
-			var docViewTop = $(window).scrollTop();
-			var docViewBottom = docViewTop + $(window).height();
+	// 	function isScrolledIntoView(elem) {
+	// 		var docViewTop = $(window).scrollTop();
+	// 		var docViewBottom = docViewTop + $(window).height();
 
-			var elemTop = $(elem).offset().top;
-			var elemBottom = elemTop + $(elem).height();
+	// 		var elemTop = $(elem).offset().top;
+	// 		var elemBottom = elemTop + $(elem).height();
 
-			if (elemBottom <= docViewBottom) {
-				return true;
-			} else {
-				return false;
-			}
-		}
-	}
+	// 		if (elemBottom <= docViewBottom) {
+	// 			return true;
+	// 		} else {
+	// 			return false;
+	// 		}
+	// 	}
+	// }
 
 
 
