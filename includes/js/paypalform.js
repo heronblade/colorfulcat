@@ -39,26 +39,26 @@ var paypalForm =
 	<input type="hidden" name="currency_code" value="USD">
 	<input type="hidden" name="option_select0" value="5x7">
 	<input type="hidden" name="option_amount0" value="15">
-	<input type="hidden" name="option_select0" value="8x10">
-	<input type="hidden" name="option_amount0" value="25">
-	<input type="hidden" name="option_select0" value="8.5x11">
-	<input type="hidden" name="option_amount0" value="28">
-	<input type="hidden" name="option_select0" value="8x12">
-	<input type="hidden" name="option_amount0" value="30">
-	<input type="hidden" name="option_select0" value="9x12">
-	<input type="hidden" name="option_amount0" value="30">
-	<input type="hidden" name="option_select0" value="11x14">
-	<input type="hidden" name="option_amount0" value="40">
-	<input type="hidden" name="option_select0" value="11x15">
-	<input type="hidden" name="option_amount0" value="40">
-	<input type="hidden" name="option_select0" value="11x16">
-	<input type="hidden" name="option_amount0" value="40">
-	<input type="hidden" name="option_select0" value="13x19">
-	<input type="hidden" name="option_amount0" value="50">
-	<input type="hidden" name="option_select0" value="16x20">
-	<input type="hidden" name="option_amount0" value="60">
-	<input type="hidden" name="option_select0" value="20x30">
-	<input type="hidden" name="option_amount0" value="85">
+	<input type="hidden" name="option_select1" value="8x10">
+	<input type="hidden" name="option_amount1" value="25">
+	<input type="hidden" name="option_select2" value="8.5x11">
+	<input type="hidden" name="option_amount2" value="28">
+	<input type="hidden" name="option_select3" value="8x12">
+	<input type="hidden" name="option_amount3" value="30">
+	<input type="hidden" name="option_select4" value="9x12">
+	<input type="hidden" name="option_amount4" value="30">
+	<input type="hidden" name="option_select5" value="11x14">
+	<input type="hidden" name="option_amount5" value="40">
+	<input type="hidden" name="option_select6" value="11x15">
+	<input type="hidden" name="option_amount6" value="40">
+	<input type="hidden" name="option_select7" value="11x16">
+	<input type="hidden" name="option_amount7" value="40">
+	<input type="hidden" name="option_select8" value="13x19">
+	<input type="hidden" name="option_amount8" value="50">
+	<input type="hidden" name="option_select9" value="16x20">
+	<input type="hidden" name="option_amount9" value="60">
+	<input type="hidden" name="option_select10" value="20x30">
+	<input type="hidden" name="option_amount10" value="75">
 	<input type="hidden" name="option_index" value="0">
 	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
