@@ -60,6 +60,6 @@ var paypalForm =
 	<input type="hidden" name="option_select10" value="20x30">
 	<input type="hidden" name="option_amount10" value="75">
 	<input type="hidden" name="option_index" value="0">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;">
 	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>';
