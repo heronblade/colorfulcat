@@ -49,21 +49,21 @@ $(document).ready(function() {
 		var target = $(this).data('target');
 		var origVsPrint = $(target + ' .modal-body').children('.modal-orig-print').size();
 
-		if (origVsPrint === 0) {
-			$('.btn-etsy').removeAttr('disabled');
-			$('.btn-paypal').removeAttr('disabled');
-		}
+		// if (origVsPrint === 0) {
+		// 	$('.btn-etsy').removeAttr('disabled');
+		// 	$('.btn-paypal').removeAttr('disabled');
+		// }
 
-		$('.modal-paypal').hide();
+		// $('.modal-paypal').hide();
 
-	})
-
-	$('.modal-orig-print').on('click', function() {
-		$('.btn-etsy').removeAttr('disabled');
-		$('.btn-paypal').removeAttr('disabled');
-		$('.modal-size').show();
-		$('.modal-paypal').show();
 	});
+
+	// $('.modal-orig-print').on('click', function() {
+	// 	$('.btn-etsy').removeAttr('disabled');
+	// 	$('.btn-paypal').removeAttr('disabled');
+	// 	$('.modal-size').show();
+	// 	$('.modal-paypal').show();
+	// });
 
 	// $('.btn-paypal').on('click', function() {
 	// 	$('.modal-size').show();
@@ -145,18 +145,22 @@ $(document).ready(function() {
 				$('.paper-select').html('<option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option>');
 			}
 		});
+
+		$(document).on('click', '.btn-paypal', function() {
+			$('.paypal-submit').trigger('click');
+		});
 		
 
 		//ocean study
 		$('.icy-waters-orig').on('click', function() {
-			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Icy Waters"><input type="hidden" name="item_number" value="icy-waters"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">11x14 $200 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Icy Waters"><input type="hidden" name="item_number" value="icy-waters"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">11x14 $200 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.icy-waters-btn').attr('href', '');
 			$('.icy-waters-paypal').html(paypalForm);
 			$('.icy-waters-btn').hide();
 		});
 
 		$('.icy-waters-print').on('click', function() {
-			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Icy Waters"><input type="hidden" name="item_number" value="icy-waters"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option class="paypal-option" value="5x7">5x7 $12 USD</option><option class="paypal-option" value="8x10">8x10 $25 USD</option><option class="paypal-option" value="9x12">9x12 $30 USD</option><option class="paypal-option" value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="5x7"><input type="hidden" name="option_amount0" value="12"><input type="hidden" name="option_select1" value="8x10"><input type="hidden" name="option_amount1" value="25"><input type="hidden" name="option_select2" value="9x12"><input type="hidden" name="option_amount2" value="30"><input type="hidden" name="option_select3" value="11x14"><input type="hidden" name="option_amount3" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+			var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Icy Waters"><input type="hidden" name="item_number" value="icy-waters"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option class="paypal-option" value="5x7">5x7 $12 USD</option><option class="paypal-option" value="8x10">8x10 $25 USD</option><option class="paypal-option" value="9x12">9x12 $30 USD</option><option class="paypal-option" value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="5x7"><input type="hidden" name="option_amount0" value="12"><input type="hidden" name="option_select1" value="8x10"><input type="hidden" name="option_amount1" value="25"><input type="hidden" name="option_select2" value="9x12"><input type="hidden" name="option_amount2" value="30"><input type="hidden" name="option_select3" value="11x14"><input type="hidden" name="option_amount3" value="35"><input type="hidden" name="option_index" value="0"><input type="image" class="paypal-submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 			$('.icy-waters-btn').attr('href', 'https://www.etsy.com/listing/176754141/orca-painting-print-from-original?ref=shop_home_active_23');
 			$('.icy-waters-paypal').html(paypalForm);
 			$('.icy-waters-btn').show();
