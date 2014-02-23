@@ -343,6 +343,13 @@ $(document).ready(function() {
 				$('.swift-the-fox-btn').show();
 			});
 
+			$('.goldenrod-print').on('click', function() {
+				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Goldenrod"><input type="hidden" name="item_number" value="goldenrod"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="5x7">5x7 $12 USD</option><option value="8x12">8x12 $28 USD</option><option value="9x12">9x12 $30 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="5x7"><input type="hidden" name="option_amount0" value="12"><input type="hidden" name="option_select3" value="8x12"><input type="hidden" name="option_amount3" value="28"><input type="hidden" name="option_select4" value="9x12"><input type="hidden" name="option_amount4" value="30"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.goldenrod-btn').attr('href', 'https://www.etsy.com/listing/169285937/flower-painting-print-from-original?ref=shop_home_active_3');
+				$('.goldenrod-paypal').html(paypalForm);
+				$('.goldenrod-btn').show();
+			});
+
 
 		//window series
 
