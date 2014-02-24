@@ -98,7 +98,7 @@ $(document).ready(function() {
 		$(document).on('click', '.btn-paypal', function() {
 			$('.paypal-submit').trigger('click');
 		});
-		
+
 
 		//ocean study
 			$('.icy-waters-orig').on('click', function() {
@@ -367,6 +367,44 @@ $(document).ready(function() {
 
 		//window series
 
+			$('.blue-window-orig').on('click', function() {
+				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Blue Window"><input type="hidden" name="item_number" value="blue-window"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="orig">9x12 $150 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="150"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.blue-window-btn').attr('href', '');
+				$('.blue-window-btn').hide();
+				$('.blue-window-paypal').html(paypalForm);
+			});
+
+			$('.blue-window-print').on('click', function() {
+				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Blue Window"><input type="hidden" name="item_number" value="blue-window"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.blue-window-btn').attr('href', 'http://www.etsy.com/listing/163502882/window-painting-print-from-original?ref=shop_home_active_24');
+				$('.blue-window-paypal').html(paypalForm);
+			});
+
+			$('.green-window-orig').on('click', function() {
+				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Green Window"><input type="hidden" name="item_number" value="green-window"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="orig">9x12 $150 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="150"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.green-window-btn').attr('href', 'http://www.etsy.com/listing/163510960/window-painting-original-watercolor?ref=shop_home_active_23');
+				$('.green-window-paypal').html(paypalForm);
+			});
+
+			$('.green-window-print').on('click', function() {
+				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Green Window"><input type="hidden" name="item_number" value="gre-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.green-window-btn').attr('href', 'http://www.etsy.com/listing/163515823/window-painting-print-from-original?ref=shop_home_active_1');
+				$('.green-window-paypal').html(paypalForm);
+			});
+
+			$('.red-window-orig').on('click', function() {
+				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Red Window"><input type="hidden" name="item_number" value="gre-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">Original $200 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.red-window-btn').attr('href', 'http://www.etsy.com/listing/165483112/window-painting-original-watercolor?ref=shop_home_active');
+				$('.red-window-paypal').html(paypalForm);
+			});
+
+			$('.red-window-print').on('click', function() {
+				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Red Window"><input type="hidden" name="item_number" value="red-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.red-window-btn').attr('href', 'http://www.etsy.com/listing/164841917/window-painting-print-from-original?ref=shop_home_active');
+				$('.red-window-paypal').html(paypalForm);
+			});
+
+
 		//fauna
 
 		//flora
@@ -379,7 +417,7 @@ $(document).ready(function() {
 
 
 
-			
+
 
 
 			$('.poppy-orig').on('click', function() {
@@ -406,29 +444,6 @@ $(document).ready(function() {
 				$('.pumpkin-patch-paypal').html(paypalForm);
 			});
 
-			$('.green-window-orig').on('click', function() {
-				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Green Window"><input type="hidden" name="item_number" value="gre-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">Original $200 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
-				$('.green-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/163510960/window-painting-original-watercolor?ref=shop_home_active');
-				$('.green-window-paypal').html(paypalForm);
-			});
-
-			$('.green-window-print').on('click', function() {
-				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Green Window"><input type="hidden" name="item_number" value="gre-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
-				$('.green-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/163515823/window-painting-print-from-original?ref=shop_home_active');
-				$('.green-window-paypal').html(paypalForm);
-			});
-
-			$('.red-window-orig').on('click', function() {
-				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Red Window"><input type="hidden" name="item_number" value="gre-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">Original $200 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="200"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
-				$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/165483112/window-painting-original-watercolor?ref=shop_home_active');
-				$('.red-window-paypal').html(paypalForm);
-			});
-
-			$('.red-window-print').on('click', function() {
-				var paypalForm = '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Red Window"><input type="hidden" name="item_number" value="red-win"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
-				$('.red-window-etsy-btn').attr('href', 'http://www.etsy.com/listing/164841917/window-painting-print-from-original?ref=shop_home_active');
-				$('.red-window-paypal').html(paypalForm);
-			});
 
 
 			$('.fairy-tale-chapter-3-orig').on('click', function() {
@@ -474,14 +489,14 @@ $(document).ready(function() {
 				$('.anatomy-study-paypal').html(paypalForm);
 			});
 
-			
 
-			
 
-			
 
-			
-			
+
+
+
+
+
 
 			$('.bag-end-orig').on('click', function() {
 				$('.bag-end-btn').attr('href', '');
@@ -509,11 +524,11 @@ $(document).ready(function() {
 				$('.5th-avenue-btn').show();
 			});
 
-			
 
-			
 
-			
+
+
+
 
 			$('.mary-orig').on('click', function() {
 				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Mary"><input type="hidden" name="item_number" value="mary"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">42"x42" $2800 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="orig"><input type="hidden" name="option_amount0" value="2800"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
@@ -527,7 +542,7 @@ $(document).ready(function() {
 				$('.bella-paypal').html(paypalForm);
 			});
 
-			
+
 
 			$('.sycamore-path-print').on('click', function() {
 				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Sycamore Path"><input type="hidden" name="item_number" value="sycamore-path"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="8x10">8x10 $25 USD</option><option value="9x12">9x12 $30 USD</option><option value="11x14">11x14 $40 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select0" value="9x12"><input type="hidden" name="option_amount0" value="30"><input type="hidden" name="option_select0" value="11x14"><input type="hidden" name="option_amount0" value="40"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
@@ -597,9 +612,9 @@ $(document).ready(function() {
 				$('.quiet-btn').show();
 			});
 
-			
 
-			
+
+
 			$('.steady-orig').on('click', function() {
 				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Steady"><input type="hidden" name="item_number" value="steady"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select name="os0"><option value="orig">6.5x10 $125 USD</option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="6.5x10"><input type="hidden" name="option_amount0" value="125"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 				$('.steady-btn').attr('href', '');
@@ -615,11 +630,11 @@ $(document).ready(function() {
 			});
 
 
-			
 
-			
 
-		
+
+
+
 
 
 }); //document.ready
