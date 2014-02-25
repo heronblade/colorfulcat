@@ -427,7 +427,7 @@ $(document).ready(function() {
 				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="ChangeThis"><input type="hidden" name="item_number" value="changethis"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="8x10">8x10 $25 USD</option><option value="11x14">11x14 $35 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="8x10"><input type="hidden" name="option_amount0" value="25"><input type="hidden" name="option_select1" value="11x14"><input type="hidden" name="option_amount1" value="35"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
 				$('.baby-donkey-btn').attr('href', '');
 				$('.baby-donkey-paypal').html(paypalForm);
-				$('.baby-donkey-btn').hide();
+				$('.baby-donkey-btn').show();
 			});
 
 			$('.chew-print').on('click', function() {
@@ -456,6 +456,17 @@ $(document).ready(function() {
 				$('.peter-rabbit-btn').attr('href', 'https://www.etsy.com/listing/165480314/bunny-nursery-painting-print-from?ref=shop_home_active_4');
 				$('.peter-rabbit-paypal').html(paypalForm);
 				$('.peter-rabbit-btn').show();
+			});
+
+			$('.three-lambs-orig').on('click', function() {
+				$('.three-lambs-btn').hide();
+			});
+
+			$('.three-lambs-print').on('click', function() {
+				var paypalForm ='<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"><input type="hidden" name="business" value="DDFZEXCEVEJQG"><input type="hidden" name="lc" value="US"><input type="hidden" name="item_name" value="Three Lambs"><input type="hidden" name="item_number" value="three-lambs"><input type="hidden" name="button_subtype" value="services"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="shipping" value="5.00"><input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHosted"><div class="paypal-options"><div class="paypal-options"><div class="paypal-options-sizes"><input type="hidden" name="on0" value="Sizes">Sizes<select class="paypal-select" name="os0"><option value="5x7">5x7 $12 USD</option><option value="8x10">8x10 $25 USD</option><option value="9x12">9x12 $30 USD</option><option value="13x19">13x19 $48 USD</option><option value="16x20">16x20 $60 USD</option></select></div><div class="paypal-options-paper-type"><input type="hidden" name="on1" value="Paper Type">Paper Type<select class="paper-select" name="os1"><option value="Watercolor">Watercolor </option><option value="Photo Paper">Photo Paper </option></select></div></div></div><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="option_select0" value="5x7"><input type="hidden" name="option_amount0" value="12"><input type="hidden" name="option_select1" value="8x10"><input type="hidden" name="option_amount1" value="25"><input type="hidden" name="option_select2" value="9x12"><input type="hidden" name="option_amount2" value="30"><input type="hidden" name="option_select3" value="13x19"><input type="hidden" name="option_amount3" value="48"><input type="hidden" name="option_select4" value="16x20"><input type="hidden" name="option_amount4" value="60"><input type="hidden" name="option_index" value="0"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="display:none;"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>';
+				$('.three-lambs-btn').attr('href', 'https://www.etsy.com/listing/165868632/lamb-painting-print-from-original?ref=shop_home_active_7');
+				$('.three-lambs-paypal').html(paypalForm);
+				$('.three-lambs-btn').show();
 			});
 
 		//flora
