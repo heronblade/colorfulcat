@@ -645,6 +645,7 @@ $(document).ready(function() {
 				$('.yellow-skies-paypal').html(paypalForm);
 			});
 
+
 		//objects
 
 		//people and portraits
